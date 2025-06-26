@@ -1,0 +1,34 @@
+
+\section*{Exo 20} Groupes des éléments inversibles de l'anneau $\cycle{p^n}$ où $p$ est un nombre premier et $n \geq 1$ dans $\mathbb{N}$.
+
+
+On note $G_{p^n}$ le groupe multiplicatif des éléments inversibles de $\cycle{p^n}$. On rappelle que, pour $n=1$, le groupe $G_p$ est cyclique (voir exercice 18 ci-dessus). 
+
+
+\begin{enumerate}
+   \item Justifiez la propriété : $\gpn$ est un groupe abélien d'ordre $p^{n-1}(p-1)$.
+   \item On considère le cas $p=3,\ n=2$. Déterminer le groupe $G_9$, vérifier qu'il est cyclique et trouver tout ses générateurs. 
+
+   Dans les 3 questions suivantes, on suppose que le nombre premier $p$ est impair et le but est de prouver que, dans ce cas, pour tout $n\geq 1$ dans $\mathbb{N}$, le groupe $\gpn$ est cyclique.
+   \item Pour tout $n>1$ dans $\mathbb{N}$ et $x\in \mathbb{Z}$, on note $\overline{x}$ la classe de $x$ modulo $p^n \mathbb{Z}$, et $\Dot{x}$ la classe de $x$ modulo $p$. On considère la correspondance :
+   \begin{align*}
+\varphi :  \gpn &\rightarrow G_p. \\
+ \overline{x} &\mapsto \Dot{x}
+\end{align*}
+\begin{enumerate}[a)]
+    \item Vérifier que $\varphi$ est une application et montrer que c'est un épimorphisme de groupe.
+    \item Quel est l'ordre du sous-groupe Ker $\varphi$ de $\gpn$? Caractériser les éléments $x \in \mathbb{Z}$ tels que $\overline{x} \in \text{ Ker } \varphi$.
+    \item Soit $\Dot{x}$ un générateur du groupe $G_p$: dans $\gpn$, on considère l'élément $\overline{y}=\overline{x}^{p^{n-1}}$. Trouver l'ordre de $\overline{y}$ dans $\gpn$.
+\end{enumerate}
+    \item \begin{enumerate}[a)]
+        \item Soit $r\in \mathbb{N}$ tel que $1 \leq r \leq p-1$; $C^r_p$ désignant le nombre des combinaisons de $p$ éléments r à r, vérifier que  $C^r_p = p\lambda$, où $\lambda\in\mathbb{N}^*$ et $p$ ne divise pas $\lambda$.
+        \item Démontrer que, pour tout $r \in \mathbb{N}$, on a $(1+p)^{p^r}-1=p^{r+1}\mu$, où $\mu \in \mathbb{N}^*$ et $p$ ne divise pas $\mu$. [Faire un raisonnement par récurrence sur r.]
+        \item Trouver l'ordre de $\overline{1+p}$ dans $\gpn$.
+    \end{enumerate} 
+    \item Montrer que les résultats précédents impliquent que le groupe $\gpn$ est cyclique [voir exercice 14 ci-dessus]. En conclure que $\gpn$ est isomorphe à $\cycle{(p-1)} \times \cycle{p^{n-1}}$.
+    \item On considère le cas où $p=2$ et $n>1$.
+    \begin{enumerate}[a)]
+        \item Déterminer les groupes $G_4,G_8$; sont-ils cycliques?
+        \item Pour $n>3$, prouver, grâce à un morphisme de groupe convenable de $G_{2^n}$ dans $G_8$, que le groupe $G_{2^n}$ n'est pas cyclique.
+    \end{enumerate}
+\end{enumerate}

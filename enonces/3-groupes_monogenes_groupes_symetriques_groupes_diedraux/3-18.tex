@@ -1,0 +1,15 @@
+
+Soit G un groupe abélien, fini, d'ordre $n>1$; on note $e$ son élément unité. On suppose que G satisfait à la condition ($\mathcal{D}$) suivante :
+
+\begin{align*}
+    (\mathcal{D}) : \text{pour tout entier positif } d \text{ divisant } n\text{, il existe au plus } d \text{ éléments } x \text{ de G tels que } x^d=e. 
+\end{align*}
+
+On pose $n=p_1^{\alpha_1}p_2^{\alpha_2}\ldots p_k^{\alpha_k}$, les $p_i\ (1 \leq i \leq k)$ étant des nombres premiers distincts et les $\alpha_i$ des entiers strictement positifs.
+
+\begin{enumerate}[label=\alph*)]
+    \item Montrer que pour tout $i\ (1\leq i \leq k)$ il existe au moins un élément $b_i\in G$ tel que $b_i^{\dfrac{n}{p_i}}\neq e$. Vérifier que $b_i^{\dfrac{n}{p_i}}\neq e$ implique $b_i^{\dfrac{n}{p_i^{\alpha_i}}}\neq e$.
+    En déduire que pour tout  $i\ (1\leq i \leq k)$ il existe $a_i \in G$ tel que $\sigma(a_i)= p_i^{\alpha_i}$
+    \item Démontrer, en utilisant le résultat b) de l'exercice 14 ci-dessus, que le groupe $G$ est cyclique.
+    \item  Soit K un corps fini (il est commutatif d'après le théorème de Wedderburn [39]). On considère le groupe multiplicatif $K^* = K \backslash \{0\}$. Sachant que tout polynôme à une indéterminée sur un corps commutatif K, de degré $d \geq 1$, a au plus $d$ racines dans K, démontrer à l'aide du résultat b) ci-dessus que le groupe $K^*$ est cyclique. En conclure que, si $p$ est un nombre premier, le groupe $G_p$ des éléments inversibles du corps $\cycle{p}$ est cyclique d'ordre $(p-1)$.
+\end{enumerate}

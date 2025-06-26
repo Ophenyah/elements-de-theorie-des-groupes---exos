@@ -1,0 +1,20 @@
+
+\begin{enumerate}[label=\alph*)]
+    \item L'ordre d'un élément divise forcément l'ordre du groupe, donc en parcourant tout les diviseurs d de n et en comptant pour chacun le nombre d'éléments d'ordre d, on compte bien tout les éléments de G, qui sont au nombre de n.
+    \item Supposons $d$ un diviseur de G, et $\alpha(d)\neq 0$. Il existe donc au moins un élément x tel que $\sigma(g) = d$. $\langle g \rangle$ formant un groupe cyclique d'ordre $d$, il possède $\varphi(d)$ générateurs d'ordre $d$, on obtient $\alpha(d) \geq \varphi(d)$. De plus, l'ordre de chaque élément de $\langle g \rangle$ divise $d$, autrement dit, pour tout $x \in \langle g \rangle,\ x^d = e$. D'après la propriété $( \mathcal{D})$, il n'existe pas d'autre élément dont l'ordre divise $d$, et donc on a $\alpha(d) = \varphi(d)$.
+    \item Dans un groupe cyclique $C_n$ les seuls sous-groupes sont cyclique d'ordre divisant $n$, donc pour chaque diviseur $d$ de $n$ il existe un unique sous-groupe d'ordre $d$, cyclique, avec $\varphi(d)$ générateurs. Tout élément de $C_n$ étant générateur d'un des ces sous-groupes, en parcourant tout les sous-groupes de $C_n$ et en comptant leurs générateurs, on dénombre tout les éléments de $C_n$, d'où l'égalité (2).
+    \item Selon la valeur de $\alpha(d)$ on a :
+    \begin{itemize}
+        \item $\alpha(d)\neq 0 \Rightarrow \alpha(d)=\varphi(d) \Rightarrow \varphi(d) - \alpha(d) = 0$,
+        \item $\alpha(d) = 0 \Rightarrow \alpha(d)<\varphi(d) \Rightarrow \varphi(d)-\alpha(d) > 0$.
+    \end{itemize}
+    G vérifiant $(\mathcal{D})$ et à partir des égalités (1) et (2) on a :
+    
+    \begin{align*}
+        \sum_{d \in \text{D}} \alpha(d) =  \sum_{d \in \text{D}} \varphi(d) &\Rightarrow  \sum_{d \in \text{D} \backslash \{ n \} } \alpha(d) + \alpha(n) =  \sum_{d \in \text{D} \backslash \{n\}} \varphi(d) + \varphi(n), \\
+        &\Rightarrow \alpha(n)=  \sum_{d \in \text{D} \backslash \{n\}} \left( \varphi(d) - \alpha(d) \right) + \varphi(n), \\
+        &\Rightarrow \alpha(n) \geq \varphi(n) > 0.
+    \end{align*}
+
+    Donc $\alpha(n)>0$. G est d'ordre n, et possède un élément d'ordre n, donc G est cyclique.
+\end{enumerate}

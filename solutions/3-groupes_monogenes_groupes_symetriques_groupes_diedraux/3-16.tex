@@ -1,0 +1,19 @@
+
+\begin{enumerate}[label=\alph*)]
+    \item L'ordre d'un élément devant diviser l'ordre du groupe on a $\forall x \in \dfrac{\mathbb{Z}}{p^2\mathbb{Z}},\ \sigma(x) \in \{1,p,p^2\}$, et  $\forall x \in \dfrac{\mathbb{Z}}{p\mathbb{Z}}, \sigma(x) \in \{1,p\}$. D'après l'exercice 3.1, on a pour tout $(a,b)$ dans $G$, $\sigma(a,b) = ppcm(\sigma(a),\sigma(b))$, il existe trois façons d'obtenir un élément d'ordre $p$ : 
+    \begin{itemize}
+        \item $(0,b)$, avec $\sigma(b)=p$, donc $b$ relativement premier à $p$, correspondant aux générateurs de $\dfrac{\mathbb{Z}}{p \mathbb{Z}}$, qui sont au nombre de $\varphi(p) = p-1$
+        \item $(a,0)$, avec $\sigma(a) = p$. Un élément de $\dfrac{\mathbb{Z}}{p^2\mathbb{Z}}$ pouvant être d'ordre $1,p \text{ ou } p^2$, le nombre d'élément d'ordre $p$ est donné le nombre total d'éléments, moins le nombre d'élément d'ordre 1 moins le nombre d'élément d'ordre $p^2$, c'est à dire $p^2 - (\varphi(p^2) + 1) = p^2 - (p(p-1) + 1) = p-1$.
+        \item $(a,b)$, avec $\sigma(a)=\sigma(b) = p$, qui sont des combinaisons des deux cas précédant, donc au nombre de $(p-1)^2$
+    \end{itemize}
+
+    Ainsi, il y a $(p-1)+(p-1)+(p-1)^2 = p^2-1$ éléments d'ordre $p$ dans G.
+    \item  En procédant dans la même façon, pour qu'un élément $(a,b)$ soit d'ordre $p^2$, il faut et il suffit que $\sigma(a)=p^2$. Ainsi, il y a $ \varphi(p^2) p =  p^3-p^2$ éléments d'ordre $p^2$ dans $G$.
+    \item $p$ étant premier, les sous-groupes de $G$ d'ordre $p$ sont cycliques, avec $p-1$ générateurs. Ainsi, $G$ possède $\dfrac{p^2-1}{p-1} = p+1$ sous-groupes d'ordre $p$. 
+    \item Pour les sous-groupes d'ordre $p^2$ on considère les 2 cas suivants : 
+    \begin{itemize}
+        \item Sous-groupe cyclique : Un sous-groupe cyclique d'ordre $p^2$ contient $\varphi (p^2) = p^2-p$ élément d'ordre p. Ainsi, il y a $\dfrac{p^3-p^2}{p^2-p}=p$ sous-groupes cycliques d'ordre $p^2$
+        \item Sous-groupe non cyclique : considérons l'ensemble $H$ des éléments d'ordre 1 ou $p$, qui sont d'après a) au nombre de $p^2$. Vérifions que $H$ est un sous groupe : si $x\in H$, alors $x^{-1} \in H$. Soit $x,y \in H$, soit $\langle x \rangle = \langle y \rangle \Rightarrow \sigma(xy)=p$, soit $\langle x \rangle \neq \langle y \rangle \Rightarrow \langle x \rangle \cap \langle y \rangle = (0,1) \Rightarrow \sigma(xy)=p$, $H$ est donc un sous-groupe.
+    \end{itemize}
+    Il y a donc $p+1$ sous-groupes d'ordre $p^2$ dans $G$.
+\end{enumerate}

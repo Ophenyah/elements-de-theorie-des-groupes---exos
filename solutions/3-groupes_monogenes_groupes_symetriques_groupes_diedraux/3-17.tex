@@ -1,0 +1,81 @@
+
+\begin{enumerate}[label=\alph*)]
+    \item Montrons que $\alpha(x)$ est un générateur de $G$ :  \begin{align*}
+        \langle \alpha(x) \rangle &= \{\alpha(x)^n,\ n \in \mathbb{N}\}, \\
+        &= \{\alpha(x^n),\ n \in \mathbb{N}\}, \\
+        &= \alpha(G), \\
+        &= G.
+    \end{align*}
+    \item 
+    \begin{itemize}
+        \item 
+    
+    Vérifions que $\lambda$ est un morphisme, $\forall a,b \in G$ :
+    \begin{align*}
+        \lambda(ab) &= (ab)^k,\\
+        &= a^kb^k, \\
+        &= \lambda(a)\lambda(b).
+    \end{align*}
+    $\lambda$ est donc un endomorphisme, vérifions qu'il est bijectif. Supposons qu'il existe a et b positif et inférieur à $n$ tel que $\lambda(x^a) = \lambda(x^b)$ : 
+
+    \begin{align*}
+        \lambda(x^a) = \lambda(x^b) &\Rightarrow (x^a)^k = (x^b)^k,\\
+        &\Rightarrow x^{ak} = x^{bk},\\
+        &\Rightarrow ak \equiv bk \text{ (mod n)},\\
+        &\Rightarrow a \equiv b \text{ (mod n) car (k,n)=1,} \\
+        &\Rightarrow a = b,\\
+        &\Rightarrow x^a=x^b.
+    \end{align*}
+$\lambda$ est injectif et endomorphe dans un groupe fini, c'est donc un automorphisme de G.
+
+\item Posons l'application :
+
+
+\begin{align*}
+\psi :  \text{Aut(G)} &\rightarrow G_n. \\
+ \alpha &\mapsto \alpha(x)
+\end{align*}
+
+Cette application est bien définie d'après a).
+
+Pour démontrer l'injectivité, il faut démontrer le lemme suivant, qu'on a pas fait dans le bouquin :
+
+\begin{lemme}
+    Soit G et G' deux groupes non nécessairement distincts, soit S une partie génératrice de G, $\alpha$ et $\beta$ deux morphismes de G à G' tel que, pour tout $x\in S$, $\alpha(x) = \beta(x)$, alors $\alpha = \beta$.
+\end{lemme}
+
+\begin{demo}
+    On peut écrire tout élément $g$ de $G$ comme $g = \displaystyle \prod_{i=1}^n x_i^{\epsilon_i}$, avec $n\in \mathbb{N}$, $x_i\in S$ et $\epsilon_i = \pm 1$. Ainsi : 
+    \begin{align*}
+        \forall g \in G,\ \alpha(g)&= \alpha\left( \displaystyle \prod_{i=1}^n x_i^{\epsilon_i}\right),    \\
+        &=  \displaystyle \prod_{i=1}^n \alpha \left( x_i \right)^{\epsilon_i}, \\
+        &=  \displaystyle \prod_{i=1}^n \beta \left( x_i \right)^{\epsilon_i}, \\
+        &= \beta\left( \displaystyle \prod_{i=1}^n x_i^{\epsilon_i}\right),    \\
+        &= \beta(g).
+    \end{align*}
+    Et donc $\alpha = \beta$.
+\end{demo}
+
+
+    Démontrons l'injectivité de $\psi$, étant donné que tout élément de $G_n$ est un générateur de $G$, on a d'après le lemme : 
+\begin{align*}
+    \psi(\alpha) = \psi(\beta) \Rightarrow \alpha(x) = \beta(x) \Rightarrow \alpha = \beta.
+\end{align*}
+
+Considérons les $\varphi(n)$ automorphismes $\lambda$ vu plus tôt, on a $\varphi(n) \leq |Aut(G)|<\infty$, et $|G_n| = \varphi(n)$. On en déduit que $|Aut(G)|=|G_n|$, et donc la bijectivité de $\psi$.
+
+Montrons que $\psi$ est un morphisme, sachant que tout automorphisme de $G$ est de la forme $x \mapsto x^k$ avec k relativement premier avec n.
+
+\begin{align*}
+ \forall x^k,x^l \in Aut(G),\ \psi(x^k)\psi(x^l) &= \overline k\cdot \overline l, \\
+ &= \overline {k\cdot l}, \\
+  &= \psi(x^{k\cdot l}), \\
+  &= \psi(x^kx^l).
+\end{align*}
+Ainsi, le groupe $Aut(G)$ est isomorphe à $G_n$, et donc abélien d'ordre $\varphi(n)$
+\end{itemize}
+\item Soit $G$ monogène infini, sans perte de généralité, on considère $G = \mathbb Z$. D'après a) et le lemme démontré en b), il n'existe que 2 automorphismes, entièrement définis par l'image de 1, à savoir $f(x) = x$ et $f(x) = -x$. On a directement que $Aut(G) \simeq C_2$.
+
+\item Soit les groupes $C_3$ et $\mathbb Z$ qui clairement ne sont pas isomorphes. D'après b) $Aut(C_3)\simeq G_2 \simeq C_2$, et d'après c) $Aut(\mathbb Z) \simeq C_2$, donc $Aut(C_3)\simeq Aut(\mathbb Z)$.
+
+\end{enumerate}

@@ -1,0 +1,36 @@
+
+\begin{enumerate}[label=\alph*)]
+    \item
+    \begin{itemize}
+        \item 
+    Pour tout $i\ (1\leq i \leq k)$, d'après ($\mathcal{P}$), il existe au plus $\dfrac{n}{p_i}$ éléments tel que $x^{\dfrac{n}{p_i}} = e$. Il y a donc au moins $n-\dfrac{n}{p_i}$ éléments tel que $x^{\dfrac{n}{p_i}} \neq e$, et n'importe lequel d'entre eux convient comme  $b_i$.
+
+        \item  
+    Démontrons la contraposée, comme $\dfrac{n}{p_i^{\alpha_i}}$ divise $\dfrac{n}{p_i}$, on a:
+
+\[
+b_i^{\frac{n}{p_i}} = \left( b_i^{\frac{n}{p_i^{\alpha_i}}} \right)^{p_i^{\alpha_i - 1}} = e^{p_i^{\alpha_i - 1}} = e.
+\]
+
+Donc $b_i^{\dfrac{n}{p_i^{\alpha_i}}} = e$ implique $b_i^{\dfrac{n}{p_i}} = e$.
+    \item   Pour tout $i\ (1\leq i \leq k)$, on pose $a_i = b_i^{\dfrac{n}{p_i^{\alpha_i}}}$. On vérifie que $a_i^{p_i^{\alpha_i}} = e$, donc $\sigma(a_i) \mid p_i^{\alpha_i}$. Soit $k$ tel que $a_i^k=e$, on a :
+
+    \begin{align*}
+        a_i^k=e &\Rightarrow  \left( b_i^{\dfrac{n}{p_i^{\alpha_i}}} \right)^k =e, \\
+        & \Rightarrow b_i^{\dfrac{kn}{p_i^{\alpha_i}}} = e, \\
+        &\Rightarrow \dfrac{kn}{p_i^{\alpha_i}} \mid n, \\
+        &\Rightarrow \exists l\in \mathbb{N},\  \dfrac{kn}{p_i^{\alpha_i}} = ln, \\
+        &\Rightarrow \exists l\in \mathbb{N},\  \dfrac{k}{p_i^{\alpha_i}} = l, \\
+        &\Rightarrow \exists l\in \mathbb{N},\ k = lp_i^{\alpha_i}, \\
+        &\Rightarrow p_i^{\alpha_i} \mid k, \\
+        &\Rightarrow p_i^{\alpha_i} \mid \sigma(a_i).
+    \end{align*}
+
+Ainsi, $\sigma(a_i) = p_i^{\alpha_i}$.
+
+  \end{itemize}
+    \item Pour tout i, j $\in \{ 1,\ldots, k \}$ tel que $i\neq j$, $pgcd(a_i,a_j) = 1$. Soit l'élément $a_1a_2\ldots a_k$. D'après l'exo 14, $\sigma (a_1a_2\ldots a_k) = \sigma(a_1)\sigma(a_2)\ldots\sigma(a_k) = p_1^{\alpha_1}p_2^{\alpha_2}\ldots p_k^{\alpha_k} = n$. Ainsi, $\langle a_1a_2\ldots a_k \rangle = G $, donc $G$ est cyclique.
+    \item Soit $n$ l'ordre de $K*$, soit $d$ un diviseur de $n$, on considère le polynôme $P(x) = x^d - 1$, il possède au plus $d$ racines. Ainsi, l'équation $x^d = 1$ possède au plus $d$ solutions. Ainsi, $K*$ est abélien, fini, et vérifie la condition $(\mathcal{D})$. Si l'ordre de $K^*$ est strictement supérieur à 1, alors d'après b) il est cyclique, sinon, $K^*$ est le groupe trivial, cyclique d'ordre 1.
+
+    On considère le groupe $G_p$ des éléments inversibles du corps $\cycle{p}$. D'après le point précédent, $\cycle{p}$ est cyclique d'ordre $p$. $G_p$ étant un sous-groupe de $\cycle{p}$, il est lui aussi cyclique. De plus, ce groupe est composé des éléments inversibles dans $\cycle{p}$, c'est à dire des éléments relativement premier à $p$, qui sont au nombre de $\varphi(p) = (p-1)$ car $p$ est premier. Ainsi, $G_p$ est cyclique d'ordre p-1.
+\end{enumerate}

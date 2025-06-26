@@ -1,0 +1,17 @@
+
+Soit $x$ un élément quelconque de $G$ d'ordre $t$. $G$ étant fini, il existe $g\in G$ tel que $ \sigma (g)=s$. On note $v_p(n)$ la multiplicité de $p$ dans la décomposition en facteurs premiers de $n$. Posons s' et t' tel que :
+
+
+\begin{align*}
+    s' = \prod_{\substack{p \in \mathcal{P}\\ v_p(s) \geq v_p(t)}} p^{v_p(s)} & ,&t'=\prod_{\substack{p \in \mathcal{P}\\ v_p(s) < v_p(t)}} p^{v_p(t)}.
+\end{align*}
+
+Par construction, s' divise s, que t' divise t et que $pgcd(s',t')=1$. De plus :
+
+\begin{align*}
+    s't' = \prod_{p \in \mathcal{P}} p^{\text{max}(v_p(s),v_p(t))} = ppcm(s,t).
+\end{align*}
+
+On pose $g' = g^{\frac{s}{s'}}$ et $x' = x^{\frac{t}{t'}}$, d'après l'exercice 3.13, en considérant le groupe cyclique engendré par $g$ on a $\sigma(g') = s'$, et en considérant celui engendré par $x$ on a $\sigma(x')=t'$. D'après l'exercice 3.14, $\sigma(g'x') = s't' = ppcm(s,t)$.
+
+Par définition du ppcm, $ppcm(s,t) \geq s$. Et d'après la définition de $s$, $\sigma(x'g') \leq s$, donc $ppcm(s,t) \leq s$. Ainsi, $ppcm(s,t) = s$, donc t divise s et enfin $x^s=e$ pour tout élément $x$ de $G$. 
