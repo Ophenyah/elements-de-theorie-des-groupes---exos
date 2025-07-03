@@ -1,1 +1,23 @@
- 
+\begin{abc}
+    \item $\Q_p \in \Q$, et soit $\dfrac{a}{p^n}, \dfrac{b}{p^m} \in \Q_p$:
+
+\[\dfrac{a}{p^n} - \dfrac{b}{p^m} = \dfrac{p^ma - p^nb}{p^{n+m}}. \]
+
+
+On a $p^ma - p^nb \in \Z$, et $n+m \in \N$, donc $\dfrac{a}{p^n} - \dfrac{b}{p^m} \in \Q_p$, ainsi 
+$(\Q_p, +)$ et un sous groupe de $( \Q, +)$. De plus :
+
+\[\bigcup_{n \in \N} \langle \dfrac{1}{p^n} \rangle = \left\{ \dfrac{a}{p^n};\ a\in \Z,\ n\in \N  \right\} = \Q_p.\]
+
+\item $\varphi$ est clairement injective. De plus, comme $\dfrac{a}{p^n}=p \dfrac{a}{p^{n+1}} $, on en déduite que $\phi$ est surjective,
+donc que c'est une permutation.
+
+\begin{align*}
+\forall x,y \in Q_p,\ \varphi(x+y) &= p(x+y), \\
+&= px + py,\\
+&= \varphi(x) + \varphi(y).
+\end{align*}
+
+ce qui prouve que $\varphi$ est un morphisme, et donc un automorphisme.
+
+\end{abc}
