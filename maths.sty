@@ -7,8 +7,12 @@
 \renewcommand{\ker}{\text{Ker }}
 
 
+\newcommand{\N}{\mathbb{N}}
 \newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
 \newcommand{\Q}{\mathbb{Q}}
+\newcommand{\C}{\mathbb{C}}
+
 
 
 \newcommand{\deffun}[5]{
@@ -17,6 +21,15 @@
  #4 &\mapsto #5.
 \end{align*}
 }
+
+
+\newcommand{\inlinedeffun}[5]{
+$\begin{array}[t]{rl}
+#1 : #2 &\rightarrow #3 \\
+#4 &\mapsto #5.
+\end{array}$
+}
+
 
 
 \newlist{abc}{enumerate}{1}

@@ -1,0 +1,25 @@
+\begin{abc}
+\item On a $U \subset \Z$. On vérifie aussi que, $\forall x,y \in U,\ xy\in U \text{ et } x^{-1} \in U$, c'est donc un sous-groupe de $(Q^*,\times)$.
+\item On pose l'application :
+
+\deffun{\varphi}{\cycle{2}}{U}{x}{
+    \left\{
+    \begin{array}{l}
+        1 \text{ si } x = \overline{0} \\
+        -1 \text{ si } x = \overline{1} 
+    \end{array}
+    \right.
+}
+
+On vérifie de façon exhaustive que c'est un morphisme :
+
+\begin{align*}
+    &\varphi(\overline{0 + 0}) = 1 = 1 \times 1 = \varphi(\overline{0}) \varphi(\overline{0}) \\
+    &\varphi(\overline{0 + 1}) = -1 = 1 \times -1 = \varphi(\overline{0}) \varphi(\overline{1}) \\
+    &\varphi(\overline{1 + 0}) = -1 = -1 \times 1 = \varphi(\overline{1}) \varphi(\overline{0}) \\
+    &\varphi(\overline{1 + 1}) = 1 = -1 \times -1 = \varphi(\overline{1}) \varphi(\overline{1}) 
+\end{align*}
+
+Elle est aussi bijective par définition, ainsi, $U$ est isomorphe à $\left( \cycle2, +  \right)$
+
+\end{abc}

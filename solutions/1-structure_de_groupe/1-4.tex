@@ -1,0 +1,54 @@
+Tout les éléments étant simplifiables à droite implique que les applications :
+
+\[
+\begin{array}[t]{rl}
+\tau_g^y : G &\rightarrow G \\
+x &\mapsto yx,
+\end{array},\ 
+\begin{array}[t]{rl}
+\tau_d^y : G &\rightarrow G \\
+x &\mapsto xy,
+\end{array}
+\]
+
+Sont injectives. Le cardinal de G étant fini, ces translations sont bijectives.
+
+Ainsi, pour $a$ et $b$ fixé, les équations $a=xb$ et $a=bx$ ont chacune une unique solution.
+
+En particulier, pour chaque élément $a$ de $G$, il existe des uniques $e_d^a$ et $e_g^a$ tel que $a=e_d^a a$ et $a=ae_d^a$.
+
+Vérifions qu'ils sont égaux :
+
+\begin{align*}
+    \forall a \in G,\ aa&=aa, \\
+    a(e_g^aa) &= (ae_d^a)a, \\
+    ae_g^aa &= ae_d^aa, \\
+    ae_g^a &= ae_d^a \text{ (Simplifiation à droite)}, \\
+    e_g^a &= e_d^a \text{ (Simplifiation à gauche)}.
+\end{align*}
+
+Vérifions maintenant que tout les éléments ont le même neutre : 
+
+\begin{align*}
+    \forall a, b \in G,\quad ab&=ab,\\
+    (ae^a)b &= a(e^bb), \\
+    ae^ab &= ae^bb, \\
+    ae^a &= ae^b \text{ (Simplifiation à droite)}, \\
+    e^a &= e^b \text{ (Simplifiation à gauche)}.
+\end{align*}
+
+Ainsi, dans $G$, il existe un unique élément neutre $e$.
+
+Reste à montre que chaque élément $a$ admet un unique inverse $a^{-1}$.
+
+On sait que les équations $e = ax$ et $e = xa$ ont une unique solution chacune, notées respectivement $a^*_g$ et $a^*_d$. Vérifions qu'il est le même des deux cotés, et est donc l'inverse de $a$.
+
+\begin{align*}
+    \forall a \in G,\quad a &= a, \\
+    a (a^*_g a) &= (a a^*_d) a, \\
+    a a^*_g a &= a a^*_d a, \\
+    a^*_g &= a^*_d \text{ en simplifiant à droite et à gauche.}
+\end{align*}
+
+Chaque élément possède un unique inverse, et $G$ possède un élément neutre pour la loi associative $\cdot$. 
+Ainsi, $(G,\cdot)$ est un groupe.
