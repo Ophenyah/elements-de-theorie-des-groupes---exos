@@ -1,0 +1,27 @@
+\begin{abc}
+
+
+    \item Soit $x,y,x',y' \in \Z$ tel que $\overline{x} = \overline{x'}$ et 
+    $\overline{y} = \overline{y}$. On rappelle que :
+
+    \begin{align*}
+        \overline{x} = \overline{x'} &\Leftrightarrow \exists k\in \Z, x = x' + kn, \\
+        \overline{y} = \overline{y'} &\Leftrightarrow \exists k'\in \Z, y = y' + k'n.
+    \end{align*}
+
+Ainsi :
+
+\begin{align*}
+    \overline{xy} &= \overline{(x' + kn)(y' + k'n)}, \\
+    &= \overline{x'y' + x'k'n + y'kn + kk'n^2 }, \\
+    &= \overline{x'y' + n(x'k' + y'k + kk'n)}, \\
+    &= \overline{x'y'}.
+\end{align*}
+
+la multiplication ainsi définie est associative, commutative, de neutre $\overline{1}$, et est distributive par rapport à l'addition. $\cycle{n}$ est donc un anneau unitaire commutatif.
+
+\item L'ensemble $G_p$ est fini, est dans le a) on a montré que la loi de multiplication associée est associative. Montrons que chaque élément est simplifiable à droite et à gauche. Soit $\overline{a},\overline{x},\overline{y} \in G_p$ tel que $\overline{a}\overline{x} = \overline{a}\overline{y}$. 
+On a $\overline{ax}=\overline{ay}$, autrement dit, que $ax-ay = a(x-y)$ est un multiple de $p$. $\overline{a}$ étant non nul, $x-y$ est un multiple de $p$, et donc que $\overline{x}= \overline{y}$. Par commutativité, tout les éléments sont simplifiable à droite et à gauche. D'après l'exo 4, $G_p$ est un groupe.
+De plus, tout élément non nul de $\cycle{p}$ est inversible, donc c'est un corps.
+\item Chapitre 3.
+\end{abc} 
