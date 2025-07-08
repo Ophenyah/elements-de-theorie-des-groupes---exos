@@ -1,0 +1,31 @@
+De façon immédiate, on a que $\gamma_1 \subset GL(2, \R )$, $\Gamma_2 \subset \C^*$ et $\Gamma_3 \subset \cycle{5}$. Ecrivons leur table de Cayley pour vérifier la stabilité et l'existence d'un unique inverse.
+
+
+\[
+\begin{array}{c|cccc}
+   \times   & I        & \gamma_1 & \gamma_2 & \gamma_3 \\ \hline
+   I        & I        & \gamma_1 & \gamma_2 & \gamma_3 \\    
+   \gamma_1 & \gamma_1 & \gamma_2 & \gamma_3 & I \\
+   \gamma_2 & \gamma_2 & \gamma_3 & I        & \gamma_1 \\
+   \gamma_3 & \gamma_3 & I        & \gamma_1 & \gamma_2 \\ 
+\end{array}
+\quad
+\begin{array}{c|cccc}
+   \times & 1 & i & -1 & -i \\ \hline
+    1     & 1 & i & -1 & -i \\
+    i     & i & -1 & -i & 1 \\
+    -1    & -1& -i & 1 & i \\
+    -i    & -i & 1 & i & -1 \\ 
+\end{array}
+\quad
+\begin{array}{c|cccc}
+   \times & \overline{1} & \overline{2} & \overline{3} & \overline{4} \\ \hline
+   \overline{1} & \overline{1} & \overline{2} & \overline{3} & \overline{4} \\
+   \overline{2} & \overline{2} & \overline{4} & \overline{1} & \overline{3}  \\
+   \overline{3} & \overline{3} & \overline{1} & \overline{4} & \overline{2} \\
+    \overline{4} & \overline{4} & \overline 3 & \overline 2 & \overline 1 \\ 
+\end{array}
+\]
+
+On remarque que ce sont tous des groupes cyclique d'ordre 4, avec $\Gamma_1 = \langle \gamma_1 \rangle$,
+$\gamma_2 = \langle i \rangle$ et $\gamma_3 = \langle 2 \rangle$, ils sont donc tous isomorphes entre eux.
