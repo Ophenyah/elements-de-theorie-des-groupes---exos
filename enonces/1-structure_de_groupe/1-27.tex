@@ -1,0 +1,46 @@
+Notons $\C$ le plan complexe, c'est-à-dire le plan affine euclidien $R^2$ rapporté à un système d'axes orthonormés Oxy et dont tout point $M(x,y)$ est
+considéré comme l'image du nombree complexe $z = x + iy$.
+
+A toute famille de 4 nombres complexes $(a,b,c,d)$ telle que $ad-bc \neq 0$, on associe l'application:
+
+\deffun{f}{\C}{\C}{z}{\dfrac{az + b}{cz + d}, \text{ où } z \in \C.}
+
+On remarque que si $c \neq 0$, le point $- \dfrac{d}{c}$ n'a aucune image par $f$ ; d'autre part le point $\dfrac{a}{c}$ n'est l'image d'aucun point de $\C$. Pour
+remédier à ces difficultés, on rajoute au plan complexe un point dit à l'infini et noté $\infty$.
+
+On pose $\tilde{\C} = \C \cup \left\{ \infty \right\}$, pour $c \neq 0,\ f \left( - \dfrac{d}{c} \right) = \infty$ et $f(\infty) = \dfrac{a}{c}$.
+
+Une application telle que $f$ est appelée une homographie du plan complexe.
+
+\begin{abc}
+\item Montrer que toute homographie $f$ est une permutation de $\tilde{\C}$.
+
+\item Démontrer que l'ensemble $\mathcal{H}$ des homographies du plan complexe est un sous-groupe du groupe symétrique $S_{\tilde{\C}}$.
+\item En considérant le cas où $c = 0$, prouver que $\mathcal{H}$ contient comme sous-groupes le groupe des similitudes et translations du plan complexe.
+
+\item Vérifier que l'homographie $z \mapsto \dfrac{1}{z}$ est le produit (commutatif) de l'inversion de centre O et de puissance 1. et de la symétrie
+par rapport à l'axe Ox.
+
+\item Démontrer que toute homographie $f$  du plan complexe conserve les angles et leurs orientation, ce que l'on exprime en disant que $f$ 
+est une transformation conforme du plan.
+
+\item Prouver que les homographies :
+\[
+f_1 : z \mapsto z;\ f_2 : z \mapsto -z;\ f_3 : z \mapsto \dfrac{1}{z};\ f_4 : z \mapsto -\dfrac{1}{z}
+\]
+forment un sous-groupe de $\mathcal{H}$ isomorphe au groupe de Klein.
+
+\item Prouver que les homographies : 
+
+
+\[
+g_1 : z \mapsto z;\ g_2 : z \mapsto \dfrac{1}{1-z};\ g_3 : z \mapsto \dfrac{z-1}{z},
+\]
+
+\[
+g_4 : z \mapsto \dfrac{1}{z};\ g_5 : z \mapsto 1-z;\ g_6 : z \mapsto \dfrac{z}{z-1} 
+\]
+
+forment un sous-groupe de $\mathcal{H}$ isomorphe au groupe symétrique $S_3$.
+
+\end{abc}

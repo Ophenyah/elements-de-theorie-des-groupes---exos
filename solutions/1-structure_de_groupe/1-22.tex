@@ -1,0 +1,21 @@
+Toutes les matrices de cet ensemble ont pour déterminant 1, la multiplication des matrices est associative, et $I \in \Gamma$. Posons dès maintenant la table de multiplication de $\Gamma$ :
+
+
+\[
+  \begin{array}{c|cccccc}
+    \times   & I        & \gamma_1 & \gamma_2 & \gamma_3 & \gamma_4 & \gamma_5 \\
+    \hline
+    I        & I        & \gamma_1 & \gamma_2 & \gamma_3 & \gamma_4 & \gamma_5 \\
+    \gamma_1 & \gamma_1 & \gamma_2 & I        & \gamma_5 & \gamma_3 & \gamma_4 \\
+    \gamma_2 & \gamma_2 & I        & \gamma_1 & \gamma_4 & \gamma_5 & \gamma_3 \\
+    \gamma_3 & \gamma_3 & \gamma_4 & \gamma_5 & I        & \gamma_1 & \gamma_2 \\
+    \gamma_4 & \gamma_4 & \gamma_5 & \gamma_3 & \gamma_2 & I        & \gamma_1 \\
+    \gamma_5 & \gamma_5 & \gamma_3 & \gamma_4 & \gamma_1 & \gamma_2 & I        \\
+
+  \end{array}
+\]
+
+On remarque que chaque élément possède un unique inverse. $\Gamma$ est donc bien un sous-groupe de $GL(2,\R)$.
+
+On constate que ce groupe de décompose en deux sous groupes, $H = \left\{I, \gamma_1, \gamma_2 \right\}$ et $K = \left\{ I, \gamma_4  \right\}$, tel que $\Gamma = HK$. 
+D'ou l'isomorphisme évident (aka, flemme de rédiger) avec $GL(2,\cycle{2})$ et $S_3$.
