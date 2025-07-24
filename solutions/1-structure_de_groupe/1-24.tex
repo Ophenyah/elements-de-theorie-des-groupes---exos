@@ -1,0 +1,31 @@
+\begin{abc}
+    \item On sait la multiplication de matrice associative, et que $I$ est le neutre pour cette opération. Vérifions la fermeture et l'inversibilité :
+
+
+\[
+\begin{array}{c|cccc}
+   \times & I & A & B & C \\ \hline
+    I     & I & A & B & C \\ 
+    A     & A & I & C & B \\
+    B     & B & C & I & A  \\
+    C     & C & B & A & I \\
+\end{array}
+\]
+
+On a bien $K_1$ est un sous-groupe de $GL(2,\R)$. Faisons pareil pour $K_2$, dont on sait la loi associative :
+
+\[
+\begin{array}{c|cccc} 
+    \times       & \overline{1} & \overline{3} & \overline{5} & \overline{7} \\ \hline
+    \overline{1} & \overline{1} & \overline{3} & \overline{5} & \overline{7} \\ 
+    \overline{3} & \overline{3} & \overline{1} & \overline{7} & \overline{5} \\
+    \overline{5} & \overline{5} & \overline{7} & \overline{1} & \overline{3}  \\
+    \overline{7} & \overline{7} & \overline{5} & \overline{3} & \overline{1} \\
+\end{array}
+\]
+
+On vérifie bien que $K_2$ est un groupe.
+
+\item Il n'existe à isomorphisme près que 2 groupes d'ordre 4, $\dfrac{\Z}{4\Z}$ et $\dfrac{\Z}{2\Z} \times \dfrac{\Z}{2\Z}$. Comme il n'existe pas d'élément d'ordre 4 dans $K_1$ ou $K_2$, on en déduit qu'ils sont isomorphes entre eux et au groupe de Klein.
+
+\end{abc}

@@ -1,0 +1,34 @@
+\begin{abc}
+
+\item  Démontrons par récurrence sur $n$.
+
+\begin{itemize}
+    \item Initialisation : 
+
+    Soit $H_1, H_2$ deux sous-groupes de $G$ tel que $H_1H_2$ est un sous-groupe de $G$, la propriété est vérifiée.
+
+    \item Hérédité : 
+    
+    Supposons qu'il existe $n$ tel que la propriété est vraie, c'est à dire que pour $\left\{ H_i \right\}_{1\leq i \leq n}$ une famille de sous-groupe de $G$ tel que $H_iH_j = H_jH_i$ pour tout (i,j) tel que $1 \leq i < j \leq n$, $H_1H_2\ldots H_n $ est un sous-groupe de $G$. Vérifions que la propriété est vrai pour $n+1$.
+
+    Soit une $\left\{ H_i \right\}_{1\leq i \leq n+1}$ une famille de sous-groupe de $G$ tel que $H_iH_j = H_jH_i$ pour tout (i,j) tel que $1 \leq i < j \leq n+1$, on a :
+
+    \begin{align*}
+        (H_1H_2\ldots H_{n-1}H_n)H_{n+1} &= H_1H_2\ldots H_{n-1}  H_{n+1} H_n \text{, par hypothèse,}  \\
+        &= H_1H_2 \ldots H_{n+1}  H_{n-1}  H_n, \\
+        &\vdots \\
+        &= H_{n+1} (H_1H_2\ldots H_{n-1}H_n).
+    \end{align*}
+
+    De plus, par hypothèse de récurrence, $(H_1H_2\ldots H_{n-1}H_n)$ est un sous-groupe de G. 
+    
+    Ainsi, $H_1H_2\ldots H_nH_{n+1}$ est un sous-groupe de G.
+
+    \item Conclusion :
+
+    Le corrolaire est démontré.
+\end{itemize}
+
+\item 
+
+\end{abc}

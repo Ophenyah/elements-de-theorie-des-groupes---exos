@@ -1,0 +1,98 @@
+\begin{abc}
+\item Vérifions l'injectivité de $f$ :
+
+\begin{align*}
+    \forall x, y \in \tilde{\C},\ f(x) = f(y) &\Rightarrow \dfrac{ax+b}{cx+d} = \dfrac{ay+b}{cy+d}, \\
+    &\Rightarrow (ax+b)(cy+d) = (ay+b)(cx+d), \\
+    &\Rightarrow acxy + adx + bcy + bd = acxy + ady + bcx + bd, \\
+    &\Rightarrow adx + bcy = ady + bcx, \\
+    &\Rightarrow  ad(x-y) + bc(y-x) = 0, \\
+    &\Rightarrow (ad-bc)(x-y) = 0, \\
+    &\Rightarrow x=y \text{, car on sait que } ad-bc \neq 0.
+\end{align*}
+
+Vérifions la surjectivité, $\forall w\in \C^*$, on vérifie que  $f\left(
+\dfrac{wd - b}{- wc + a}
+\right) = w.$ avec par définition quand $c$ est non nul $f\left( \dfrac{-d}{c} \right) = \infty$ et $f(\infty) = \dfrac{a}{c}.$
+ 
+
+\item L'ensemble $\mathcal{H}$ est non vide, l'application identité $f(z) = z$ étant une homographie de paramètre $\left\{1,0,0,1\right\}$. De plus, chaque homographie est inversible, et son inverse est aussi une homographie. Vérifions que cet ensemble est stable par composition, soit $f$ une homographie de paramètres $\left\{ a,b,c,d \right\}$  et $g$ une homographie de paramètres $ \left\{\alpha, \beta, \gamma, \delta\right\} $ :  
+
+
+\[
+(f \circ g)(z) = \dfrac{(a\alpha + b\gamma)z + (a\beta + b\delta) }{(c\alpha + d\gamma) + c\beta +d\delta}.
+\]
+
+Avec $(a\alpha + b\gamma)(c\beta +d\delta) - (a\beta + b\delta)(c\alpha + d\gamma) \neq 0$, donc $\mathcal{H}$ est stable pas composition.
+
+La composition de fonctions étant associative, on conclut que $\mathcal{H}$ est un sous-groupe de $\tilde{\C}$.
+
+\item 
+
+Le groupe des similitudes de $\C$ étant les application de la forme $az + b$ avec $a\in \C^*, b\in \C$, on constate que ce sont les homographie de paramètres $\{a,b,0,1\}$.
+
+Les translations étant des similitudes où $a=1$, on vérifie immédiatement qu'elles sont incluses dans le groupe des homographies.
+
+\item L'inversion de centre O est $z \mapsto \dfrac{1}{\overline{z}}$, et la symétrie par Ox $z \mapsto \overline{z}$. Le produit des deux est donc l'homographie $z \mapsto 
+\dfrac{1}{z}$.
+
+
+\item Quand $c=0$, les homographies sont des similitudes, qui préservent les angles et leurs orientations.
+
+Soit $f$ une homographie de paramètres $\left\{ a,b,c,d \right\}$, avec $c\neq 0$. On peut écrire
+\[a + bz = \dfrac{a}{c}(cz+d) - \dfrac{ad-bc}{c},\]
+
+ce qui permet de réécrire $f$ comme :
+
+\[f = \dfrac{a}{c} -  \dfrac{ad-bc}{c^2} \dfrac{1}{z + \dfrac{d}{c}}.\]
+
+On peut décomposer $f$ comme une composition de :
+
+\begin{itemize}
+    \item $t : z \mapsto z + \dfrac{d}{c}$, une translations,
+    \item $i : z \mapsto \dfrac{1}{\overline{z}}$, une inversion de centre O et de puissance 1,
+    \item $c : z \mapsto \overline{z}$, une symétrie selon l'axe Ox,
+    \item $s : z \mapsto -\dfrac{ad-bc}{c^2}z + \dfrac{a}{c} $ une similitude,
+\end{itemize}
+
+telle que $f = s \circ c \circ i \circ t \circ$.
+
+Toutes ces applications préservent les angles, de plus $i$ et $c$ changent l'orientation. On en conclut que $f$ est une transformation conforme du plan.
+
+\item Soit $K = \left\{ f_1,f_2,f_3,f_4\right\}$, posons la table de Cayley de cet ensemble muni de la composition:
+
+\[
+\begin{array}{c|cccc} 
+    \circ        & f_1 & f_2 & f_3 & f_4 \\ \hline
+    f_1          & f_1 & f_2 & f_3 & f_4 \\ 
+    f_2          & f_2 & f_1 & f_4 & f_3 \\
+    f_3          & f_3 & f_4 & f_1 & f_2  \\
+    f_4          & f_4 & f_3 & f_2 & f_1 \\
+\end{array}
+\]
+
+Qui permet immédiatement de conclure que K est isomorphe au groupe de Klein.
+
+
+\item Posons $H = \left\{g_1,g_2,g_3,g_4,g_5,g_6\right\}$, et posons sa table de Cayley encore :
+
+
+\[
+\begin{array}{c|cccccc} 
+    \circ  & g_1 & g_2 & g_3  & g_4 &g_5 & g_6 \\ \hline
+    g_1 & g_1 & g_2 & g_3  & g_4 &g_5 & g_6  \\ 
+    g_2 & g_2 & g_3 & g_1  & g_6 &g_4 & g_5  \\ 
+    g_3 & g_3 & g_1 & g_2  & g_5 &g_6 & g_4  \\ 
+    g_4 & g_4 & g_5 & g_6  & g_1 &g_2 & g_3  \\ 
+    g_5 & g_5 & g_6 & g_4  & g_3 &g_1 & g_2  \\ 
+    g_6 & g_6 & g_4 & g_5  & g_2 &g_3 & g_1  \\ 
+    \end{array}
+\]
+
+$H$ est stable par composition et passage à l'inverse, c'est donc un sous-groupe de $\mathcal{H}$. En posant la bijection avec $S_3$ :
+
+\[ e \mapsto g_1,\ \sigma_1 \mapsto g_2,\ \sigma_2 \mapsto g_3,\ t_1 \mapsto g_4,\ t_2 \mapsto g_5,\ t_3 \mapsto g_6  \]
+
+on constate que les tables de Cayley sont identitique, donc que $H$ et $S_3$ sont isomorphes.
+
+\end{abc}

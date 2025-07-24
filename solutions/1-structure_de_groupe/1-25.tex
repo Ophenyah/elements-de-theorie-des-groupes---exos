@@ -1,0 +1,46 @@
+\begin{abc}
+\item On a démontré que $\Gamma_1 \simeq \Gamma_2 \simeq \Gamma_3$. $\Gamma_1$ étant un sous-groupe de $GL(2,\R)$, $\Gamma_2$ et $\Gamma_3$ admettent un morphisme bijectif pour un sous-groupe $GL(2,\R)$, qui est aussi un morphisme injectif dans $GL(2,\R)$. En appliquant le même raisonement pour $K_2$ et $S_3$ , on trouve que ces 4 groupes admettent une représentation matricielle de degré 2 sur $\R$.
+\item Posons l'application $\varphi$ tel que :
+
+\deffun{\varphi}{\C^*}{GL(2,\R)}{a+ib}{\begin{pmatrix}
+    a & -b \\
+    b & a 
+\end{pmatrix}}
+
+Vérifions tout d'abord que toute image est bien dans $GL(2, \R)$ :
+
+\begin{align*}
+   \forall a+ib \in \C, det(\varphi(a+ib)) = a^2 + b^2 \neq 0. 
+\end{align*}
+
+
+Vérifions que c'est un morphisme :
+
+\begin{align*}
+    \forall a+ib, c+id \in \C^*, \varphi((a+ib) + (c +id)) &= \varphi( (a+c) + i(b+d) ), \\
+    &= \begin{pmatrix}
+        a+c & -(b+d) \\
+        b+d & a+c
+    \end{pmatrix}, \\
+    &=\begin{pmatrix}
+        a & -b \\
+        b & a 
+    \end{pmatrix}
+    \begin{pmatrix}
+        c & -d \\
+        d & c
+    \end{pmatrix}, \\
+    &\varphi(a+ib)\varphi(c+id).
+\end{align*}
+
+Enfin, vérifion son injectivité : 
+
+\begin{align*}
+    \ker(\varphi) &= \left\{ a+ib \in C^*, \varphi(a+ib) = I_2  \right\}, \\
+    &= \left\{ a+ib \in C^* , a=1 \land b=0  \right\}, \\
+    &= \left\{ 1 \right\}.
+\end{align*}
+
+Ainsi,  le groupe multiplicatif $C^*$ admet une représentation matricielle de degré 2 sur $\R$.
+
+\end{abc}
