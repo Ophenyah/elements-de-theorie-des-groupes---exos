@@ -1,0 +1,36 @@
+La loi de composition est clairement une loi interne. Vérifions qu'elle est associative :
+
+\begin{align*}
+    \forall f,g,h \in G^E,\ (f(gh))(x) &= f(x) ((gh)(x)), \\
+    &= f(x) (g(x)h(x)), \\
+    &= (f(x) g(x)) h(x) \text{ car } f(x),g(x),h(x) \in G \text{, un groupe,} \\
+    &= ((fg) (x))(h(x)), \\
+    &= ((fg)h)(x).
+\end{align*}
+
+Vérifions l'existence d'un élément neutre. Soit $e$ le neutre de $G$, et $i(x) \in G^E$, tel que $\forall x \in Z, i(x) = e$, pour tout x dans $E$ on a $(fi)(x) = f(x)i(x) = f(x) = i(x)f(x) = (if)(x)$, $i$ est donc un neutre.
+
+
+Pour tout $f \in G^E$, on pose $g$ tel que $\forall x\in E,\ g(x) = f(x)^{-1}$. On vérifie que $\forall x\in Z, (fg)(x) = f(x)g(x) = f(x)f(x)^{-1} = e = i(x)$, et pareil pour $gf$.
+
+On en conclut que $G^E$ est un groupe.
+\medskip
+
+Supposons que G soit abélien, soit $f,g \in G^E$ :
+\begin{align*}
+    \forall x\in E,\ (fg)(x) &= f(x)g(x), \\
+    &= g(x)f(x), \\
+    &= (gf)(x). 
+\end{align*}
+
+Supposons que $G^E$ soit abélien. Pour tout $a,b \in G$, on pose $f,g\in G^E$ tel que $\forall x\in E, f(x)=a \text{ et } g(x) = b$. Ainsi on a :
+
+\begin{align*}
+    \forall a,b \in G, \forall x\in E, \ ab &= f(x)g(x), \\
+    &= (fg)(x), \\
+    &= (gf)(x), \\
+    &=  g(x)f(x), \\
+    &= ba.
+\end{align*}
+
+On conclut que $G^E$ est un groupe abélien si et seulement si $G$ est abélien.
