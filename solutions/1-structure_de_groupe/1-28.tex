@@ -29,6 +29,36 @@
     Le corrolaire est démontré.
 \end{itemize}
 
-\item 
+\item Soit $I$ un ensemble non vide et $\left\{ H_i \right\}_{i\in I}$  une famille de sous-groupes d'un groupe abélien $G$. Montrons que le sous-groupe $\displaystyle G' \Sigma_{i\in I} H_i$ est en somme directe si et seulement si tout $x \in G'$ s'écrt de 
+façon unique :
+\[
+x \in \displaystyle \sum_{i \in I} x_{i_k}.
+\]
+
+Supposons que chaque $z \in G'$ s'écrive de façon unique. Soit $Z \in \displaystyle \bigcap_{i \in I} H_i$, pour tout $j \in J$, on peut écrire :
+
+\[z = \underbrace{z}_{\in H_j} + \underbrace{0}_{\in \sum_{i\neq j} H_i} = \underbrace{0}_{\in H_j} + \underbrace{z}_{\in \sum_{i\neq j} h_i}\]
+
+$z$ s'écrivant de façon unique, on en conclut que $z = 0$, donc $G'$ est en somme directe.
+
+\medskip
+
+Supposons que $G'$ soit en somme directe, c'est-à-dire que $\displaystyle \bigcap_{i \in I} H_i = \left\{ 0 \right\}$. Soit $z \in G'$, supposons que $z$ s'écrive de deux façcons différentes :
+
+\[ z = \displaystyle \sum_{i\in I} x_i =  \sum_{i\in I} x'_i \text{, avec au moins un i tel que } x_i \neq x_i'\]
+
+pour tout $j \in I$, on peut écrire :
+
+\[x_j - x_j' =  \displaystyle \sum_{\substack{i\in I
+\\ i\neq j}} x'_i - \sum_{\substack{i\in I
+\\ i\neq j}} x_i = \sum_{\substack{i\in I
+\\ i\neq j}} x'_i - x_i.  \]
+
+On a $x_j - x'j \in H_j$, et   $\displaystyle \sum_{\substack{i\in I
+\\ i\neq j}} x'_i - x_i  \in \sum_{\substack{i\in I
+\\ i\neq j}} H_i$, donc $\displaystyle x_j - x_j' \in H_j \cap \sum_{\substack{i\in I
+\\ i\neq j}} x'_i - x_i.  = {0}$.
+
+Donc, pour tout $j \in I$, z s'écrit de façon unique.
 
 \end{abc}
