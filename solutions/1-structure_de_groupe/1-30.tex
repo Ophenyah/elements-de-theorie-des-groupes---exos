@@ -1,0 +1,45 @@
+\begin{abc}
+\item Les fonctions de $\R^J$ continues sur $J$ sont un sous-ensemble des fonctions de $\R^J$. De plus, la différence de deux fonctions continues est continues. Donc $\mathcal{C}(J)$ est un sous-groupe de $(\R^J,+)$.
+
+De la même façon, les fonctions constantes sont des fonctions continues, et $c_a - c_b = c_{a-b}$.
+
+
+\item
+$F_1, F_3, F_4$ sont des morphismes, en efffet, $\forall f,g \in \mathcal{C}(J) : $
+\begin{align*}
+    F_1(f + g) &= (f+g)(1) = f(1) + g(1) = F_1(f) + F_1(g), \\
+    F_3(f+g) &= \displaystyle \int_0^1 (f+g)(x) dx =
+    \int_0^1 f(x) + g(x) dx = \int_0^1 f(x) dx + \int_0^1 g(x) dx = F_3(f) + F_3(g), \\
+    F_4 &: \text{Par linéarité de l'intégrale comme } F_3.
+\end{align*}
+
+Cependant, $F_2(c_{-1} + c_{1}) = F_2(c_0) = 0$, mais $F_2(c_{-1}) + F_2(c_1) = 2$, ce n'est pas un morphisme. 
+
+Et $F_5(c_0) = 1 \neq 0$, donc ce n'est pas un morphisme non plus.
+
+On vérifie trivialement (que j'ai la flemme de le taper) que pour ces morphismes, $\forall a \in \R, F_i(c_a) = a$.
+
+Posons le calcul pour $F_1$ : 
+
+\begin{align*}
+    F_1(Id_J - c_m) = 0 &\Rightarrow F_1(Id_J) - F(c_m) = 0 \\
+    &\Rightarrow F_1(Id_J) = F_1(c_m), \\
+    &\Rightarrow Id_J(1) = m, \\
+    &\Rightarrow m = 1.
+\end{align*}
+
+Et on vérifie qu'on a bien $F_1(Id_J - c_1) = 0$ (Peut être qu'en bossant par équivalences successives on aurait pas à revérifier, mais j'suis traumatisée car j'en mettais trop), l'unique $m_1$ est donc 1. De la même façon, on trouve $m_3 = 0.5$ et $m_4 = 1 + \dfrac{6\sqrt{3} - 12}{\pi}$. 
+
+Comme le $c_m$ est unique pour chacun de ses morphismes, ont en conclut que leurs noyaux sont distincts.
+
+\item  Soit $f \in \mathcal{C}(J)$, on peut écrire 
+\[f = \underbrace{f - c_{F(f)}}_{\in \ker F} + \underbrace{c_{F(f)}}_{\in \Gamma}.\]
+
+Vérifions ensuites que l'intersection de ces deux ensembles est triviale. Soit $c_a \in \Gamma$, $F(c_a) = a$, donc on a bien $\ker F \cap \Gamma = \left\{ c_0 \right\}$.
+
+Soit la famille de morphismes $\left\{ F_\alpha \right\}$ avec $\alpha \in [0;1]$, tel que $F_\alpha = \dfrac{1}{\alpha}
+\displaystyle \int_0^\alpha f(x) dx$. 
+
+Par linéarité de l'intégrale, ce sont bien des morphismes. De plus, $\forall a \in \R, F_\alpha(c_a) = a$. De la même façon que précédemment, on vérifie que $F_\alpha(Id_J - c_{m_\alpha}) = 0$ admet une unique solution $m_\alpha = \alpha$. On a donc une famille infinie de morphismes aillant des noyaux distincts, ces noyaux permettant la décomposition de $\mathcal{C}(J)$ en somme directe de $\ker F_\alpha$ et $\Gamma$.
+
+\end{abc}
