@@ -1,0 +1,43 @@
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRAHEB9ARhAF9S6TLnyEUAJnJVajFmy7j+gkBmx4CRMuOn1mrRBx5Kha0UUnbquuQYX9pMKAHN4RUADMAThAC2SMiA4EEjcVrL6IAA6kfSeaAAWWCDUDHQARjAMAArC6mIgDDDuOMkg8TB0UGw4AO4Q5ZUI1Dh0WAxs8RAQANbGIF6+-s3BiJIyemzRjAl0pakZ2blmBoXFfQN+iKGBIwDMYROIYEwMDCnpmTmmGitFJQIe3ptjQUj74zZRMXRxiXMXi2u+U8WCc8XuFD4QA
+
+\begin{abc}
+
+    \item Soit $G_1$ et $G_2$ deux groupes isomorphes et $\varphi$ un isomorphisme de $G_1$ vers $G_2$.
+\[ 
+\begin{tikzcd}
+G_1 \arrow[rr, "\varphi", two heads, hook] \arrow[dd, "\alpha", two heads, hook] &  & G_2 \arrow[dd] \\
+                                                                &  &                \\
+G_1 \arrow[rr, "\varphi"', two heads, hook]                                      &  & G_2           
+\end{tikzcd}
+\]
+
+On pose l'application $\Psi$ tel que :
+
+\deffun{\Psi}{Aut(G_1)}{Aut(G_2)}{a}{\varphi \circ \alpha \circ \varphi^{-1}}
+
+C'est un morphisme, en effet :
+
+\begin{align*}
+    \forall \alpha_1, \alpha_2 \in Aut(G_1),\
+    \Psi(\alpha_1 \circ \alpha_2) & = \varphi \circ (\alpha_1 \circ \alpha_2) \circ \varphi^{-1}, \\
+    &= \varphi \circ \alpha_1 \circ \alpha_2 \circ \varphi^{-1}, \\
+    &= \varphi \circ \alpha_1 \circ \varphi^{-1} \circ \varphi \circ \alpha_2 \circ \varphi^{-1}, \\
+    &= \Psi(\alpha_1) \circ \Psi(\alpha_2).
+\end{align*}
+
+Vérifions l'injectivité : 
+
+\begin{align*}
+    \forall \alpha \in Aut(G_1), \Psi(\alpha) = Id_{G_2} &\Leftrightarrow \varphi \circ \alpha \circ \varphi^{-1} = Id_{G_2}, \\
+    &\Leftrightarrow \varphi \circ \alpha = \varphi, \\
+    &\Leftrightarrow \alpha = Id_{G_1}.
+\end{align*}
+
+Et si $\alpha \in Aut(G_2)$, on a $\Psi(\varphi^{-1} \circ \alpha \circ \varphi ) = \alpha$, montrant la surjectivité, et donc que $G_1 \cong G_2 \Rightarrow Aut(G_1) \cong Aut(G_2)$.
+
+\item De la même façon, on pose :
+
+\deffun{\Psi_{Int}}{Int(G_1)}{Int(G_2)}{\sigma_g}{\Psi(\sigma_g)}
+
+On vérifie  que $\Psi_{Int}$ est bien définie, avec $\Psi_{Int}(\sigma_g) = \sigma_{\varphi(g)}$. De la même façon que a), on montre que $\Psi_{Int}$ est un isomorphisme de groupes, et donc que $G_1 \cong G_2 \Rightarrow Int(G_1) \cong Int(G_2)$. 
+\end{abc}
