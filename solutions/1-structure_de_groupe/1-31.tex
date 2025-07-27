@@ -1,0 +1,53 @@
+\begin{abc}
+\item Vérifions que l'application suivante est un isomorphisme de groupe : 
+
+\deffun{\varphi}{G_1 \times G_2}{G_2 \times G_1}{(g_1,g_2)}{(g_2,g_1)}
+
+$\varphi$ est un morphisme, en effet :
+
+\begin{align*}
+    \forall (g_1,g_2),(h_1,h_2) \in G_1 \times G_2,\ \varphi((g_1,g_2)(h_1,h_2)) &= \varphi((g_1h_1,g_2h_2)), \\
+    &= (g_2h_2, g_1h_1), \\
+    &= (g_2,g_1)(h_2,h_1), \\
+    &= \varphi(g_1,g_1)\varphi(h_1,h_2).
+\end{align*}
+
+Vérifions qu'elle est injective :
+
+\begin{align*}
+    \forall (g_1,g_2) \in G_1 \times G_2,\ \varphi(g_1,g_2) = (e_2,e_1) &\Leftrightarrow (g_2,g_1) = (e_2,e_1).
+\end{align*}
+
+Elle est aussi trivialement surjective, car pour tout $(g_2,g_1) \in G_2 \times G_1$, on a $\varphi(g_1,g_2) = (g_2,g_1)$.
+
+Ainsi, $\varphi$ est un isomorphisme, donc pour tout groupe $G_1$ et $G_2$, on a $G_1 \times G_2 \cong G_2 \times G_1$.
+
+\item Soit $\varphi_1$ un isomorphisme de $\Gamma_1$ vers $G_1$ et  $\varphi_2$ un isomorphisme de $\Gamma_2$ vers $G_2$.
+
+On vérifie de la même façon que a) que :
+
+\deffun{\varphi}{\Gamma_1 \times \Gamma_2}{G_1 \times G_2}{(\gamma_1,\gamma_2)}{(\varphi_1(\gamma_1),\varphi_2(\gamma_2))}
+
+est un isomorphisme de groupe (flemme de taper, et franchement c'est la même chose que a)), donc on a $\Gamma_1 \times \Gamma_2 \cong G_1 \times G_2$.
+
+\item On a $H_1 \times H_2 \subseteq G_1 \times G_2$, et 
+
+\begin{align*}
+    \forall (h_1,h_2), (k_1,k_2) \in H_1 \times H_2,\ (h_1,h_2)(k_1,k_2)^{-1} &= (h_1,h_2)(k_1^{-1}, k_2^{-1}), \\
+    &= (h_1k_1^{-1}, h_2k_2^{-1}) \in G_1 \times G_2.
+\end{align*}
+
+Donc $H_1 \times H_2$ est un sous-groupe de $G_1 \times G_2$.
+
+
+Les sous groupes de $\cycle 2 \times \cycle 2$ sont :
+
+\[
+\left\{ (\overline{0},\overline{0})\right\},\
+\left\{ (\overline{0},\overline{0}),(\overline{1},\overline{1})\right\},\ 
+\left\{ (\overline{0},\overline{0}),(\overline{0},\overline{1})\right\},\ 
+\left\{ (\overline{0},\overline{0}),(\overline{1},\overline{0})\right\},
+\]
+
+On constate que $\left\{ (\overline{0},\overline{0}),(\overline{1},\overline{1})\right\}$ n'est pas produit de sous-groupes de $\cycle 2 \times \cycle 2$, mais est un sous-groupe de $\cycle 2 \times \cycle 2$.
+\end{abc}
