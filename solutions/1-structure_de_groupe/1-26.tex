@@ -1,0 +1,35 @@
+\begin{abc}
+\item 
+\begin{itemize}
+    \item $\forall A \in P,\ || id_P(A) || = || A ||$, l'identité est donc une isométrie.
+    \item Pour toute droite $\Delta$ et point $A$ avec son symétrique par rapport à $\Delta$ $A'$, on pose le repère de centre $O$ l'intersection entre $\Delta$ et $AA'$ et d'axes $\vec{OA'}$ et $\Delta$. Dans ce repère, le symétrique d'un point $(x,y)$ est $(-x,y)$. Ainsi :
+    \[\forall (x,y) \in \R^2,\ || s_\Delta(x,y) || = || (-x,y) || = || (x,y), ||\]
+    et on a 
+    \[\forall (x,y) \in \R^2,\ s_\Delta(s_\Delta((x,y)))  = s_\Delta((-x,y)) =  (x,y) = id_P ((x,y)). \]
+
+    \item 
+    \begin{align*}
+        \forall f_1, f_2 \in \mathcal{I}(2), \forall A \in P, || f_2 \circ f_1 \circ A || &= || f_1 \circ A || \text{  car } f_2 \text{ est une isométrie,}\\
+        &= || A || \text{  car } f_1 \text{ est une isométrie.}\\
+    \end{align*}
+    Ainsi, le produit de deux isométries est une isométrie.
+\end{itemize}
+\item 
+\begin{itemize}
+    \item Soit $M$ un point de la droite $AB$, $d$ la fonction distance, comme $f$ est une isométrie, on a 
+    \[d(f(A), f(M))  = d(A, M),\ d(f(B),f(M)) = d(B,M) \]
+    De plus, comme A et B sont des points fixes, on a 
+    \[d(A, f(M))  = d(A, M),\ d(B,f(M)) = d(B,M) \]
+    Donc le point $f(M)$ est à la meme distance de $A$ et $B$ que le point $M$.
+    Donc, les points $M$ et $f(M)$ sont sur le même cercle centré en $A$ de rayon $AM$, et aussi sur le même cercle centré en $B$ de rayon $BM$, cercles tangeant en $M$.
+    
+    Ainsi, $f(M) = M$.
+
+ 
+
+\end{itemize}
+\item 
+\item 
+\item
+\item
+\end{abc}
