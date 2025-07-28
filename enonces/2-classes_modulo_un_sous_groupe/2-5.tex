@@ -1,0 +1,35 @@
+Soit $H$ et $K$ deux sous-groupes (non nécessairement distincts) d'un groupe $G$. On considère la relation binaire $\mathcal{R}_{H,K}$ définie dans $G$ par :
+\[
+x \mathcal{R}_{H,K}\ y \Leftrightarrow \exists (h, k) \in H \times K,\ y=hxk.
+\]
+
+\begin{abc}
+\item 
+Vérifier que $\mathcal{R}_{H,K}$ est une relation d'équivalence dans $G$ et que la classe modulo $\mathcal{R}_{H,K}$ d'un élément $x \in G$ est $HxK = \left\{ hxk; (h,k) \in H \times K \right\}$.
+
+$HxK$ sera appelée "classe double de $x$ modulo $H$ et $K$".
+
+\item $x$ étant donné dans $G$, vérifier que l'application 
+
+\deffun{\lambda}{HxK}{x^{-1}HxK}{hxk}{x^{-1}hxk}
+
+est une bijection.
+
+\item On suppose que le groupe $G$ est fini; soit $r \in \N^*$ le nombre de classes doubles distinctes, de $G$ modulo $H$ et $K$; on les notera $Hx_iK, 1 \leq i \leq r$.
+
+Pour tout $(1 \leq i \leq r)$, justifier les propriétés suivantes :
+
+\begin{enumerate}[label=\greek*)]
+\item  $|Hx_iK| = |x_i^{-1}Hx_iK|$ (égalité des cardinaux);
+\item $x_i^{-1}Hx_i$ est un sous-groupe de $G$ et $\sigma(x_i^{-1}Hx_i) = \sigma(H)$;
+\item $|Hx_iK| = \dfrac{\sigma(H) \sigma(K)}{\sigma(x_i^{-1}Hx_i \cap K)}$ (voir l'exercice 3 ci-dessus).
+\end{enumerate}
+En déduire la relation :
+
+\[\sigma(G) = \sigma(H)\sigma(K) \displaystyle \sum_{i=1}^r d_i^{-1} \]
+
+où, pour tout $i\ (1 \leq i \leq r)$, $d_i = \sigma(x_i^{-1}Hx_i \cap K)$.
+
+\item D'après les résultats précédents, a priori, dans un groupe $G$, deux classes doubles distinctes modulo H et K, ne sont pas, en général, équipotentes; montrer que la décomposition du groupe symétrique $S_3$ en classes doubles modulo $H \langle \tau_1 \rangle$ et $K = \langle \tau_2 \rangle$ confirme cette remarque et permet aussi de vérifier que $H \neq K$ implique, en général dans un groupe non abélien, $\mathcal{R}_{H,K} \neq \mathcal{R}_{K,H}$.
+
+\end{abc}
