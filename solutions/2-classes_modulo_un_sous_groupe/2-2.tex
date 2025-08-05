@@ -1,0 +1,35 @@
+\begin{abc}
+
+\item  
+
+\begin{align*}
+    Kx_i = Kx_j &\Rightarrow x_ix_j^{-1} \in K, \\
+    &\Rightarrow x_ix_j^{-1} \in H \inter K \text{ car x famille de H modulo } H \inter K, \\
+    &\Rightarrow (H \inter K)x_i = (H \inter K)x_j, \\
+    &\Rightarrow i = j.
+\end{align*}
+
+La réciproque étant triviale, on a bien $Kx_i = Kx_j \Leftrightarrow i = j$.
+
+Un représentant d'une classe à droite de $H$ modulo $H \inter K$ est aussi un réprésentant d'une classe à droite de $G$ modulo $K$, on en déduit que :
+
+\[ \indice H {H \inter K} 
+\leq
+\indice G K
+<
+\infty.
+\]
+ 
+On a démontré que $G \supseteq \displaystyle \bigcup_{i \in I} Kx_i $.
+
+Soit $g \in G$, par hypothèse, $\exists (h,k) \in H \times K$ tel que $g = hk$. Il existe $i \in I$ tel que $h \in (H \inter K)x_i \subseteq Kx_i$, et donc $G =  \displaystyle \bigcup_{i \in I} Kx_i.$
+
+\item 
+
+D'après la formule des indices, on a :
+
+\[\indice G {H \inter K} = \indice G H \indice H {H \inter K} \leq \indice G H \indice G K.\]
+
+L'égalité quand $G=HK$ découlant directement du point précédent.
+
+\end{abc}
